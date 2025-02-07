@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+        h2 {
+            color: #58a6ff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .social-container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ff2a2a, #ff4d4d);
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(255, 77, 77, 0.5);
+        }
+        .social-link img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        .social-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(255, 77, 77, 0.7);
+        }
+        .btn-voltar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #58a6ff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .btn-voltar:hover {
+            background-color: #3079b8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Conecte-se Conosco</h2>
+
+    <div class="social-container">
+        <!-- TikTok Link -->
+        <a href="https://www.tiktok.com/@exercito_usaoficial" class="social-link" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3NDROjBnDvHJ3FeyHcftsVcgSxtHUebvgTw&s" alt="Logo TikTok">
+            TikTok Oficial
+        </a>
+
+        <!-- Discord Link -->
+        <a href="https://discord.com/channels/1320081483674812446/1330586424088596522" class="social-link" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJ4nRYwebqocH4UwlSp_Yi9pZOQvXVnA3NA&s" alt="Logo Discord">
+            Discord Oficial
+        </a>
+    </div>
+
+    <!-- Botão de Voltar para o Menu Principal -->
+    <a href="index.html" class="btn-voltar">Voltar para o Menu Principal</a>
+
+</body>
+</html>

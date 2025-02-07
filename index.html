@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor RP Militar</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #ffffff;
+        }
+        header {
+            background-color: #161b22;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #e60000;
+            background-color: #23272b;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background-color: #161b22;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn-jogar {
+            display: inline-block;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-jogar:hover {
+            background-color: #e60000;
+        }
+        form input, form textarea {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #ff4d4d;  /* Cor vermelha */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px; /* Ajustando o tamanho da fonte */
+            cursor: pointer;
+            transition: 0.3s;
+            width: 90%;  /* Para garantir que ocupe a largura do formulário */
+            max-width: 500px;  /* Não ultrapassar o tamanho do campo de entrada */
+            margin: 10px auto;  /* Centraliza o botão */
+        }
+        form button:hover {
+            background-color: #e60000;  /* Cor vermelha mais escura no hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>U.S.A ROLEPLAY</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="hierarquia.html">Hierarquia</a></li> <!-- Link para a página de Hierarquia -->
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="redes.html">Redes Sociais</a></li> <!-- Link para a página de Redes Sociais -->
+                
+
+
+
+
+
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Servidor RP Militar</h2>
+        <p>Participe de operações estratégicas e entre para uma das nossas corporações militares.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Nosso servidor oferece uma experiência de roleplay militar no jogo <strong>Brookhaven RP</strong>.</p>
+        <p>Aqui, você pode se alistar em diferentes corporações militares, subir de patente e participar de missões táticas.</p>
+        <p>Somos uma comunidade focada em disciplina, estratégia e realismo dentro do RP.</p>
+    </section>
+
+    <section id="regras">
+        <h2>Regras</h2>
+        <ul>
+            <li>Respeite os outros jogadores e administradores.</li>
+            <li>Proibido o uso de hacks, exploits ou qualquer trapaça.</li>
+            <li>O roleplay deve ser seguido de forma coerente.</li>
+            <li>Comportamento tóxico ou abusivo não será tolerado.</li>
+            <li>Obedeça as ordens superiores dentro do RP militar.</li>
+            <li>Uso indevido de veículos militares pode resultar em punição.</li>
+            <li>Deserção ou traição dentro do RP pode levar a banimento.</li>
+        </ul>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <p>Preencha o formulário abaixo para ingressar no nosso servidor RP Militar.</p>
+        <form onsubmit="return handleFormSubmit(event)">
+            <label for="nome">Nome (RP):</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="idade">Idade (RP):</label>
+            <input type="number" id="idade" name="idade" required>
+            <label for="historia">História do Personagem:</label>
+            <textarea id="historia" name="historia" rows="4" required></textarea>
+            <label for="nick">Nick do Roblox:</label>
+            <input type="text" id="nick" name="nick" required>
+            <p style="color: #ff0000; font-size: 14px;">* Certifique-se de digitar o nick corretamente. Caso contrário, pode haver erro e você não conseguirá jogar na cidade.</p>
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="https://www.roblox.com/share?code=84ad9e3980034a4791538fe16de50c8c&type=Server" class="btn-jogar" target="_blank">Entrar no Servidor</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Servidor RP Militar - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();  // Impede o envio do formulário
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const historia = document.getElementById('historia').value;
+            const nick = document.getElementById('nick').value;
+            
+            console.log('Cadastro Enviado:');
+            console.log('Nome:', nome);
+            console.log('Idade:', idade);
+            console.log('História:', historia);
+            console.log('Nick:', nick);
+
+            alert('Cadastro realizado com sucesso!');
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+        h2 {
+            color: #58a6ff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .menu-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .menu-item {
+            font-size: 18px;
+            color: white;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            background: #58a6ff;
+            transition: background-color 0.3s;
+        }
+        .menu-item:hover {
+            background: #3079b8;
+        }
+        .config-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .config-btn img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
